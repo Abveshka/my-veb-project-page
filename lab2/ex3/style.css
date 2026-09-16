@@ -1,0 +1,63 @@
+/* 1. Чекбоксы и box-shadow */
+input[type="checkbox"] {
+  box-shadow: 0 0 8px rgba(255, 0, 132, 0.5);
+}
+
+/* 2. Отмеченные чекбоксы */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 8px rgba(0, 255, 179, 0.675);
+}
+
+/* 3. Фон для div c классом cb */
+div.cb {
+  background-color: rgba(150, 151, 72, 0.884);
+}
+
+/* 4. Элементы с id=message и id=message-* */
+#message, 
+[id^="message-"] {
+  background-color: #ffeeba;
+}
+
+/* 5. Элементы с id=message-* (рамка и внешние поля) */
+[id^="message-"] {
+  border: 1px solid #ffeeba;
+  margin: 15px 0;
+}
+
+/* 6. Ссылки с расширением .zip при наведении */
+a[href$=".zip"]:hover {
+  color: #a41bc0;
+}
+
+/* 7. Элементы с data-action, содержащим слово delete */
+[data-action~="delete"] {
+  color: #d9534f;
+}
+
+/* 8. Элементы с data-action, НЕ содержащим слово delete */
+[data-action]:not([data-action~="delete"]) {
+  background-color: #e2e3e5;
+}
+
+/* 9. Чётные элементы списка #messages */
+#messages > *:nth-child(even) {
+  border-style: dashed;
+  border-width: 5px;
+  border-color: #007bff;
+}
+
+/* 10. Соседний элемент сразу за h3#widget-title */
+h3#widget-title + * {
+  font-weight: bold;
+}
+
+/* 11. Все ссылки после h3#widget-title на том же уровне */
+h3#widget-title ~ a {
+  font-style: italic;
+}
+
+/* 12. Ссылка внутри последнего элемента списка #messages при наведении */
+#messages > *:last-child a:hover {
+  color: #28a745;
+}
