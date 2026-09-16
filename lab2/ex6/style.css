@@ -1,0 +1,105 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f7f9f7;
+  color: #23301f;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3a7d44;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+
+
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e3e9e3;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.menu a {
+  color: #23301f;
+  text-decoration: none;
+}
+
+/* Основной контент */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* Сетка карточек на Flexbox */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  flex: 0 0 calc((100% - 60px) / 4);  /* всегда 1/4 ширины минус gap */
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e3e9e3;
+  border-radius: 12px;
+  padding: 16px;
+}
+.card__image {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.card__image img {
+  display: block;
+  width: 100%;
+  height: 140px;        /* фиксированная высота, чтобы карточки были ровными */
+  object-fit: cover;    /* кадрирует, сохраняя пропорции */
+  border-radius: 8px;
+}
+.card p {
+  color: #6b7a6b;
+  flex-grow: 1;           /* прижимает цену и кнопку вниз */
+}
+.price {
+  font-weight: 600;
+  margin: 8px 0;
+}
+.card button {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #3a7d44;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px;
+  background: #fff;
+  border-top: 1px solid #e3e9e3;
+}
+.footer a {
+  color: #6b7a6b;
+  text-decoration: none;
+}
