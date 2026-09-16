@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исследование алгоритмов и веб-архитектуры | Проект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="project-title">Исследование сервиса планирования RoutinePlanner</h1>
+            <p class="project-subtitle">Отчет о проекте</p>
+            <div class="author-info">
+                <span><strong>Автор: Баркова Анна</strong></span> | 
+                <span><strong>Дата: 15.09.2026</strong></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h2>1. Введение и цели проекта</h2>
+            <p>
+                Современные веб-приложения требуют четкого разделения ответственности между бэкенд-сервисами 
+                и пользовательским интерфейсом. Данный проект посвящен проектированию и реализации масштабируемой 
+                системы планирования задач и целей.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>2. Используемый стек технологий</h2>
+            <ul>
+                <li><strong>Backend:</strong> C# (.NET Core Web API), Entity Framework Core</li>
+                <li><strong>Frontend:</strong> React, TypeScript</li>
+                <li><strong>База данных:</strong> PostgreSQL</li>
+                <li><strong>Контейнеризация и безопасность:</strong> Docker, JWT (JSON Web Tokens)</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>3. Схемы и архитектура системы</h2>
+            <div class="image-gallery">
+                <figure class="gallery-item">
+                    <img src="image1.png" alt="Схема архитектуры">
+                    <figcaption>Рис. 1 - Среда разработки</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="image2.png" alt="Диаграмма компонентов">
+                    <figcaption>Рис. 2 - База данных</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>4. Сравнительный анализ модулей</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Модуль</th>
+                            <th>Технология</th>
+                            <th>Метод аутентификации</th>
+                            <th>Средний отклик (мс)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Auth Service</td>
+                            <td>ASP.NET Core Identity</td>
+                            <td>JWT Bearer</td>
+                            <td>~45</td>
+                        </tr>
+                        <tr>
+                            <td>Goal Tracker API</td>
+                            <td>C# / EF Core</td>
+                            <td>JWT Bearer</td>
+                            <td>~25</td>
+                        </tr>
+                        <tr>
+                            <td>Frontend UI</td>
+                            <td>React + TypeScript</td>
+                            <td>-</td>
+                            <td>~15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>5. Полезные ссылки</h2>
+            <ol>
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">Репозиторий проекта на GitHub</a></li>
+                <li><a href="https://docs.microsoft.com/dotnet/" target="_blank" rel="noopener noreferrer">Документация .NET</a></li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Проектная работа. Опубликовано с помощью GitHub Pages.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

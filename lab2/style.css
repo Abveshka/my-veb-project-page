@@ -1,0 +1,141 @@
+* { /*сброс стилей браузера*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Общий контейнер центрирования */
+.container {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+
+
+.header {
+    padding: 50px 0 25px;
+    border-bottom: 1px solid #e1e4e8;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1b1f23;
+    margin-bottom: 10px;
+}
+
+
+.author-info {
+    font-size: 0.9rem;
+    color: #6a737d;
+}
+
+
+/*общие стили секций и текста*/
+.section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #1b1f23;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.colortext {
+    color: red; /* Красный цвет выделения */
+}
+
+
+/* Списки */
+ul {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+
+li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+}
+
+
+
+
+.gallery-item img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 3px solid #00a8e1;
+}
+
+.gallery-item figcaption {
+    font-size: 0.85rem;
+    color: #6a737d;
+    margin-top: 8px;
+}
+
+
+
+/* Контейнер для подсказки */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dashed #1a73e8; /* Пунктирное подчеркивание */
+    cursor: help; /* Меняем курсор на стрелочку со знаком вопроса */
+}
+
+/* Сам блок с текстом подсказки (изначально скрыт) */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #333; 
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    
+    /* Абсолютное позиционирование над элементом */
+    position: absolute;
+    z-index: 10;
+    bottom: 125%; /* Приподнимаем над основным текстом */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем ровно по середине */
+    
+    /* Плавное появление */
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Показываем подсказку при наведении (:hover) */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6a737d;
+}
