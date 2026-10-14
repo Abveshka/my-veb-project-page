@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f6;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+
+.comments-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 25px 25px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.comment > .comment__body {
+    padding: 14px 18px;
+    background: #f0f1f4;
+    border-radius: 8px;
+}
+
+.comment__body .comment__author {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.comment__body .comment__text {
+    line-height: 1.4;
+    color: #444;
+}
+
+/*  (A + B): 
+   - текст сразу после автора получает отступ сверху
+   - комментарий сразу после другого комментария получает отступ сверху */
+.comment__author + .comment__text {
+    margin-top: 4px;
+}
+
+.comment + .comment {
+    margin-top: 10px;
+}
+
+/* (A ~ B): сдвиг и вертикальная линия */
+.comment__body ~ .comment__replies {
+    margin-top: 10px;
+    margin-left: 14px;
+    padding-left: 25px;
+    border-left: 2px solid #d8d8dc;
+}
+
+/* Свёрнутый комментарий: блеклый вид (дочерний + потомки) */
+.comment--collapsed > .comment__body {
+    background: #f6f6f8;
+}
+
+.comment--collapsed > .comment__body .comment__author,
+.comment--collapsed > .comment__body .comment__text {
+    color: #aaa;
+}
+
+.comment--collapsed > .comment__body ~ .comment__replies {
+    display: none;
+}

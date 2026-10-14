@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="comments-container">
+        <!-- Комментарий 1 (Родительский) -->
+        <div class="comment">
+            <div class="comment__body">
+                <div class="comment__author">Иван Иванов</div>
+                <div class="comment__text">Отличная статья! Все разложено по полочкам.</div>
+            </div>
+            <!-- Ветка ответов первого уровня -->
+            <div class="comment__replies">
+                <!-- Комментарий 2 (Вложенный) -->
+                <div class="comment">
+                    <div class="comment__body">
+                        <div class="comment__author">Петр Петров</div>
+                        <div class="comment__text">Согласен, особенно понравился пример про DOM-дерево.</div>
+                    </div>
+                    <!-- Ветка ответов второго уровня -->
+                    <div class="comment__replies">
+                        <!-- Комментарий 3 (Глубокая вложенность) -->
+                        <div class="comment">
+                            <div class="comment__body">
+                                <div class="comment__author">Анна Сидорова</div>
+                                <div class="comment__text">А мне показалось, что тему селекторов раскрыли слабо.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Комментарий 4 (Вложенный, свернутый) -->
+                <!-- Добавляем класс .comment--collapsed для демонстрации скрытия -->
+                <div class="comment comment--collapsed">
+                    <div class="comment__body">
+                        <div class="comment__author">Дмитрий К.</div>
+                        <div class="comment__text">Этот комментарий и его ответы будут скрыты (блеклые).</div>
+                    </div>
+                    <div class="comment__replies">
+                        <div class="comment">
+                            <div class="comment__body">
+                                <div class="comment__author">Елена В.</div>
+                                <div class="comment__text">Этот текст никто не увидит, пока класс не уберут.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
