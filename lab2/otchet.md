@@ -51,3 +51,11 @@ https://abveshka.github.io/my-veb-project-page/lab2/ex7/
 # Задание 8
 Ссылка на выполненную страницу:
 https://abveshka.github.io/my-veb-project-page/lab2/ex8/
+
+# Задание 9
+Ссылка на выполненную страницу:
+https://abveshka.github.io/my-veb-project-page/lab2/ex9/
+
+# Задание 9
+Ссылка на выполненную страницу:
+https://abveshka.github.io/my-veb-project-page/lab2/ex10/

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Афиша города</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="#">Город</a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="#">События</a></li>
+                <li><a class="nav__link" href="#">Места</a></li>
+                <li><a class="nav__link" href="#">Билеты</a></li>
+                <li><a class="nav__link" href="#">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <aside class="filters">
+            <h2 class="filters__title">Фильтры</h2>
+
+            <form class="filters__form">
+                <label class="filters__field">
+                    Дата
+                    <input type="date" name="date">
+                </label>
+                <label class="filters__field">
+                    Категория
+                    <select name="category">
+                        <option>Все</option>
+                        <option>Концерты</option>
+                        <option>Театр</option>
+                        <option>Выставки</option>
+                    </select>
+                </label>
+            </form>
+
+            <section class="tags">
+                <h3 class="visually-hidden">Теги</h3>
+                <ul class="tags__list">
+                    <li><a class="tag" href="#">#бесплатно</a></li>
+                    <li><a class="tag" href="#">#семья</a></li>
+                    <li><a class="tag" href="#">#вечером</a></li>
+                    <li><a class="tag" href="#">#дети</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <section class="events">
+            <h2 class="visually-hidden">События</h2>
+
+            <article class="card">
+                <div class="card__image"></div>
+                <div class="card__body">
+                    <h3 class="card__title">Спектакль «Ревизор»</h3>
+                    <p class="card__meta">Пятница, 20:00 - Городской театр</p>
+                </div>
+                <div class="card__footer">
+                    <span class="card__price">от 800 ₽</span>
+                    <a class="btn" href="#">Подробнее</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image"></div>
+                <div class="card__body">
+                    <h3 class="card__title">Выставка современного искусства</h3>
+                    <p class="card__meta">Суббота, 12:00 - Галерея «Арт-холл»</p>
+                </div>
+                <div class="card__footer">
+                    <span class="card__price">400 ₽</span>
+                    <a class="btn" href="#">Подробнее</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image"></div>
+                <div class="card__body">
+                    <h3 class="card__title">Семейный фестиваль</h3>
+                    <p class="card__meta">Воскресенье, 11:00 - Набережная</p>
+                </div>
+                <div class="card__footer">
+                    <span class="card__price">Бесплатно</span>
+                    <a class="btn" href="#">Подробнее</a>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Афиша города</p>
+    </footer>
+</body>
+</html>
